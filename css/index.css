@@ -1,0 +1,64 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.landing {
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+    margin: 0 auto;
+    color: white;
+	
+    /* Note: This gradient may render differently in browsers that don't support the unprefixed gradient syntax */
+    
+    /* IE10 Consumer Preview */ 
+    background-image: -ms-linear-gradient(top left, #1D1F26 0%, #333745 100%);
+    
+    /* Mozilla Firefox */ 
+    background-image: -moz-linear-gradient(top left, #1D1F26 0%, #333745 100%);
+    
+    /* Opera */ 
+    background-image: -o-linear-gradient(top left, #1D1F26 0%, #333745 100%);
+    
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #1D1F26), color-stop(1, #333745));
+    
+    /* Webkit (Chrome 11+) */ 
+    background-image: -webkit-linear-gradient(top left, #1D1F26 0%, #333745 100%);
+    
+    /* W3C Markup, IE10 Release Preview */ 
+    background-image: linear-gradient(to bottom right, #1D1F26 0%, #333745 100%);
+}
+
+/* Vertically align picture and text in landing when not in xs*/
+@media (min-width: 992px) {
+    .landing-content {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.profile-img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding: 6px;
+    border: 2px solid#848484;
+    border-radius: 16px;
+    background-color: white;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+.content {
+    background-color: white;
+}
